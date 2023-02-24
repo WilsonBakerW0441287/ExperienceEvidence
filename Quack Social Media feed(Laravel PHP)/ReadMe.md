@@ -1,3 +1,3 @@
 Our Final assignment in this course required us to develop a social media web application which incorporated all the skills and knowledge we had gained in this course. This involved implementing features such as user account creation, modification, and deletion, as well as enabling users to create, edit, and delete their own posts without affecting other users' content. Additionally, we created different user roles, including Moderators, Admins, and Theme Managers. To save all data to a database, we utilized Migrations.
 
-<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example1.PNG" >
+<img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example1.PNG" >
