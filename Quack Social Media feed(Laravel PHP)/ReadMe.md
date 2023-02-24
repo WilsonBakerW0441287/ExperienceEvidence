@@ -3,17 +3,20 @@ Our Final assignment in this course required us to develop a social media web ap
 Main page for users, Showing the most recent post. When a user is signed in The create post button is enabled. when a user is signed in they can edit or delete their post.
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example1.PNG" >
 
-User moderation page: This site is only accessible to admins and allows them to change the permissions of elevated users.
+User moderation page: This site is only accessible to admins and allows them to change the permissions of elevated users. 
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example2.PNG" >
 
-Theme management page: This allows users with the ThemeManager role to CRUD (create, read, update, delete) Bootstrap themes for users to choose from.
+Theme management page: This allows users with the ThemeManager role to CRUD (create, read, update, delete) Bootstrap themes for users to choose from. 
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example3.PNG" >
 
-User role implementation: Not allowing a user who doesn't have the right roles to access certain pages, giving them a pop-up telling them why.
+
+User role implementation: Not allowing a user who doesn't have the right roles to access certain pages, giving them a pop-up telling them why. 
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example4.PNG" >
 
-The database entity-relationship diagram (ERD).
+
+The database entity-relationship diagram (ERD). 
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example5.PNG" >
 
-The data for users, with password hashing.
+
+The data for users, with password hashing. 
 <img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example6.PNG" >
