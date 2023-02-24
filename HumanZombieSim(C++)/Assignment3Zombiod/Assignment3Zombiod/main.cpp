@@ -11,6 +11,7 @@
 #include "City.h"
 #include "Human.h"
 #include "Zombie.h"
+#include "windows.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ void ClearScreen() {
 
 int main() {
     City *city = new City();
-
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     chrono::milliseconds interval(
             ITERATIONS);
     while (city->hasDiversity()) { //while both humans and zombies exist
@@ -29,6 +30,7 @@ int main() {
         city->move(); //includes all actions
         cout << *city << endl; //prints city
 //        cout << "GENERATION " << city->getGeneration() << endl;
+        SetConsoleTextAttribute(hConsole, BLANK_COLOR);
         cout << "HUMANS: " << city->countType('H') << endl;
         cout << "ZOMBIES: " << city->countType('Z') << endl;
         cout << "Generation: " << city->generation << endl;

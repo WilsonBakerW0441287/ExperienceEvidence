@@ -6,6 +6,7 @@
 #include "Zombie.h"
 #include "Human.h"
 #include "Organism.h"
+#include <windows.h>
 
 City::City() {
     // declare a city
@@ -24,18 +25,21 @@ City::City() {
     }
 
     //define A few organisms on the grid
+//    Human *human2 = new Human(this, 2, 15);
+//    grid[2][15] = human2;
+
     Human *human = new Human(this, 1, 1);
-    Human *human2 = new Human(this, 2, 15);
+    Human *human2 = new Human(this, 9, 9);
     Human *human3 = new Human(this, 3, 3);
     Zombie *zombie = new Zombie(this, 15, 15);
-    Zombie *zombie2 = new Zombie(this, 13, 17);
+    Zombie *zombie2 = new Zombie(this, 13, 13);
     Zombie *zombie3 = new Zombie(this, 5, 5);
     //let the city know the organisms are on the board
     grid[1][1] = human;
-    grid[2][15] = human2;
+    grid[9][9] = human2;
     grid[3][3] = human3;
     grid[15][15] = zombie;
-    grid[13][17] = zombie2;
+    grid[13][13] = zombie2;
     grid[5][5] = zombie3;
 }
 
@@ -88,6 +92,7 @@ void City::move() {
 }
 
 ostream &operator<<(ostream &output, City &city) {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     //this allows us to cout << CityObject
     //it will print out the grid
     //if there is a human, print H
@@ -98,12 +103,13 @@ ostream &operator<<(ostream &output, City &city) {
         for (int j = 0; j < GRID_HEIGHT; j++) {
 
             if (city.grid[i][j] == nullptr) {
+                SetConsoleTextAttribute(hConsole, BLANK_COLOR);
                 output << " ~ ";
             } else if (city.grid[i][j]->type == 'H') {
-                char type = city.grid[i][j]->getType();
+                SetConsoleTextAttribute(hConsole, HUMAN_COLOR);
                 output << " H ";
             } else if (city.grid[i][j]->type == 'Z') {
-                char type = city.grid[i][j]->getType();
+                SetConsoleTextAttribute(hConsole, ZOMBIE_COLOR);
                 output << " Z ";
             }
         }//inner loop

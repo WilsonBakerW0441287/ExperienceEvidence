@@ -18,7 +18,7 @@ const char ZOMBIE_CH = 90;//90 "Z"// ascii zombie
 const double PAUSE_SECONDS = .09; // pause between steps
 const int ITERATIONS = 1000; // max number of steps
 
-//Colors
+////Colors
 //0  = black				//9  = bright blue
 //1  = blue					//10 = bright green
 //2  = green				//11 = bright turquoise
@@ -29,8 +29,9 @@ const int ITERATIONS = 1000; // max number of steps
 //7  = white regular		//16+ = solid blocks
 //8  = white pale
 
-const int HUMAN_COLOR = 3; // turquoise
-const int ZOMBIE_COLOR = 14; // bright yellow
+const int HUMAN_COLOR = 10; // turquoise
+const int ZOMBIE_COLOR = 12; // bright yellow
+const int BLANK_COLOR = 7;
 
 
 #endif //ASSIGNMENT3ZOMBIOD_GAMESPECS_H
