@@ -13,7 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        {{--                        add a create new admin user button--}}
+                        {{--add a create new admin user button--}}
                         <a href="{{route('themes.index')}}">
                             <button type="button" class="btn btn-outline-danger">Go Back</button>
                         </a>

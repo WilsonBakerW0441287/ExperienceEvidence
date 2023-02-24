@@ -2,10 +2,6 @@
 
     $selectedThemeid = \Illuminate\Support\Facades\Cookie::get('theme') ?? 1;//default to 1
 
-//    if(!$selectedThemeid) {
-//        $selectedThemeid = 1;//sets the default theme to 1
-//    }
-//
     $selectedTheme = \App\Models\Theme::find($selectedThemeid);
 
 @endphp
