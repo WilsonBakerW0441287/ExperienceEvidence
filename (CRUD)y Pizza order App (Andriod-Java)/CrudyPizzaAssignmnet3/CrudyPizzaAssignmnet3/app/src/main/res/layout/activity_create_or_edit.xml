@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOrEditActivity"
+    android:background="@drawable/background2">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="temp - info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTextViewSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="1000dp"
+                android:text="@string/sizeSelection"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="746dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/rbSizeSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/small"
+                    android:textSize="34sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSizeMed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/medium"
+                    android:textSize="34sp" />
+
+                <RadioButton
+                    android:id="@+id/rbSizeLrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/large"
+                    android:textSize="34sp" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTextViewToppings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toppingSelection"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPineappleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startincrement"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnPineAMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/minus"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/tvPineapple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/pineapple"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btnPineAPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/plus"
+                    android:textSize="28sp" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPorkCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startincrement"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnPorkMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/plus"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/tvPork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/pork"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btnPorkPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/minus"
+                    android:textSize="28sp" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPepCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startincrement"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnPepMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/minus"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/tvPepperoni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/pepperoni"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btnPepPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:text="@string/plus"
+                    android:textSize="28sp" />
+
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTextViewCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/customerInformation"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="bottom|center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextCustomerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/info"
+                android:inputType="textLongMessage"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="34sp" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

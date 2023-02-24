@@ -23,6 +23,7 @@ City::City() {
         }
     }
 
+    //define A few organisms on the grid
     Human *human = new Human(this, 1, 1);
     Human *human2 = new Human(this, 2, 15);
     Human *human3 = new Human(this, 3, 3);
@@ -48,7 +49,6 @@ bool City::hasDiversity() { //making sure one of each is alive
     for (int i = 0; i < GRID_WIDTH; i++) {
         for (int j = 0; j < GRID_HEIGHT; j++) {
             if (grid[i][j] != nullptr) {
-//                char type = grid[i][j]->getType();
                 if (grid[i][j]->getType() == 'H') {
                     hcount++;
                 } else if (grid[i][j]->getType() == 'Z') {
@@ -70,10 +70,11 @@ void City::setOrganism(Organism *organism, int x, int y) {
 }
 
 void City::move() {
-    //this is the fucntion that will be called in main to move all the organisms
+    //this is the function that will be called in main to move all the organisms
     //loop thru the grid and call the move function for each organism
     //if the organism is a human, call the recruit function
     //if the organism is a zombie, call the infect function
+    //otherwise the organism is null pointer, do nothing
     for (int i = 0; i < GRID_WIDTH; i++) {
         for (int j = 0; j < GRID_HEIGHT; j++) {
             if (grid[i][j] != nullptr) {
@@ -83,7 +84,6 @@ void City::move() {
             }
         }
     }
-
     this->reset();//reset the moved variable to false
 }
 
@@ -96,13 +96,7 @@ ostream &operator<<(ostream &output, City &city) {
 
     for (int i = 0; i < GRID_WIDTH; i++) {
         for (int j = 0; j < GRID_HEIGHT; j++) {
-//            if (type == 'H') {
-//                output << "H";
-//            } else if (type == 'Z') {
-//                output << "Z";
-//            } else {
-//                output << "~";
-//            }
+
             if (city.grid[i][j] == nullptr) {
                 output << " ~ ";
             } else if (city.grid[i][j]->type == 'H') {
@@ -125,7 +119,7 @@ void City::reset() {
             if (j != nullptr) {
                 j->endTurn();
             }
-            //end the turn for all organisms);
+            //end the turn for all organisms
         }//inner loop
     }//outer loop
 }//end reset

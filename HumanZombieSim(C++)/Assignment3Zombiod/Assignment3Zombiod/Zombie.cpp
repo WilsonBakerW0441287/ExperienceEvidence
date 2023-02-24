@@ -6,7 +6,7 @@
 #include "Human.h"
 #include "Organism.h"
 
-//this method is more eat/move as if there is a human in the same square as the zombie, the zombie eats the human
+//this method is eat/move, as if there is a human in the same square as the zombie, the zombie eats the human
 //they can also move to an adjacent square
 //they can ALSO turn a human into a zombie if the zombie has lived for 3 turns the new zombie a summoning sickness (can't do anything for 1 turn)
 //if the zombie has not eaten a human in 8 turns, it turns back into a human
@@ -16,7 +16,6 @@ Zombie::Zombie(City *city, int x, int y) : Organism(city, x, y) {
     this->city = city;
     this->type = 'Z';
     moveConter = 0;
-
 }
 
 Zombie::~Zombie() {
@@ -29,7 +28,7 @@ void Zombie::move() {
         return;
     }
     //the zombie has 8 possible moves
-    //if there is anything in the adjectsquare
+    //if there is anything in the adjacent square
     moved = true;
     vector<int> directions;
     vector<Organism *> humanArray;
@@ -41,7 +40,6 @@ void Zombie::move() {
         if (city->getOrganism(x - 1, y) != nullptr) {
             if (city->getOrganism(x - 1, y)->getType() == 'H') {
                 humanArray.push_back(city->getOrganism(x - 1, y));
-
             }
         } else if (city->getOrganism(x - 1, y) == nullptr) { directions.push_back(this->WEST); }
     }
@@ -119,7 +117,6 @@ void Zombie::move() {
         city->setOrganism(new Zombie(city, humanX, humanY), humanX, humanY);
         cout << "Zombie ate a human at (" << humanX << ", " << humanY << ")" << endl;
         moveConter = 0;
-//        city->setOrganism(new Zombie(city, hx, hy), hx, hy);
     }
     if (!directions.empty()) {
 
@@ -175,7 +172,6 @@ void Zombie::move() {
 
 
 void Zombie::starve(int x, int y) {
-//turn the zombie into a human
+    //turn the zombie into a human
     city->setOrganism(new Human(city, x, y), x, y);
-//    delete this;
 }

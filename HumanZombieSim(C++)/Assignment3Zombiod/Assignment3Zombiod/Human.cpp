@@ -7,26 +7,13 @@
 Human::Human() {
     type = 'H';
 
-//// Human class inherits from Organism
-//class Human : public Organism {
-//public:
-//    // Overridden turn method for humans
-//    void turn() override {
-//        // Move, recruit, etc.
-//    }
-
-//    // Other members specific to humans
-//    // ...
-//};
-
-
 }
 
 Human::Human(City *city, int x, int y) : Organism(city, x, y) {
     //when making a new human you need to specify the city, the x and y coordinates
     //the human should be placed in the city at the specified coordinates
     //the human should be given a summoning sickness (can't do anything for 1 turn)
-    //a new human should have moved set already
+    //a new human should have "moved" already
     moved = false;
     this->city = city;
     this->type = 'H';
@@ -38,12 +25,11 @@ Human::~Human() {
 }
 
 void Human::move() {
-//get the 4 adjacent squares
-//if there is anything in an adjacent square, it can't move there
-//if the human has survived 3 turns it can recruit a human into the city
+    //get the 4 adjacent squares
+    //if there is anything in an adjacent square, it can't move there
+    //if the human has survived 3 turns it can recruit a human into the city
     moved = true;
     vector<int> directions;
-
     if (x > 0) {//checks if the human is in the first column
         //check if the organism in the square is a taken
         if (city->getOrganism(x - 1, y) == nullptr) {
@@ -75,33 +61,29 @@ void Human::move() {
                 city->setOrganism(this, (x - 1), y);
                 city->setOrganism(nullptr, x, y);
                 this->setPosition(x - 1, y);
-//                x = x - 1;
                 break;
             case EAST:
                 city->setOrganism(this, (x + 1), y);
                 city->setOrganism(nullptr, x, y);
                 this->setPosition(x + 1, y);
-//                x = x + 1;
                 break;
             case NORTH:
                 city->setOrganism(this, x, y - 1);
                 city->setOrganism(nullptr, x, y);
                 this->setPosition(x, y - 1);
-//                y = y - 1;
                 break;
             case SOUTH:
                 city->setOrganism(this, x, y + 1);
                 city->setOrganism(nullptr, x, y);
                 this->setPosition(x, y + 1);
-//                y = y + 1;
                 break;
         }
     }
-//empty array
+    //empty array
     directions.clear();
     //if the human has survived 3 turns it can recruit a human into the city
     if (moveConter == 3) {
-//recruit a human into the city
+        //recruit a human into the city
         //the human should be placed in the city at the specified coordinates
         //the human should be given a summoning sickness (can't do anything for 1 turn)
         if (x > 0) {//checks if the human is in the first column
