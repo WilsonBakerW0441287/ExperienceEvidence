@@ -11,7 +11,7 @@ Organism::Organism() {
 //as well as if the square it can move to is empty or not, i.e if there is another organism there, or it is the Border
 }
 
-//GRIDSIZE is the size of the board
+//GRID SIZE is the size of the board
 Organism::Organism(City *city, int x, int y) {
     this->width = GRIDSIZE;
     this->height = GRIDSIZE;
