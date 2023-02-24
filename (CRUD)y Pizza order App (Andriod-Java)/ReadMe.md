@@ -14,10 +14,10 @@ Layout is up to the student and should look professional with a good choice of c
 Data persistence – SQLite:
 Implement the use of an SQLite database into your application in order to demonstrate your familiarity with that technology. Your solution must have full CRUD capability. Orders may be “atomic” in that you do not need to keep a separate table of customers for future orders or marketing data. Validation is required for all non-selectable fields e.g. phone number. <br>
 Main Screen                                                                                                                    
-<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence1.PNG">
+<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence1.PNG"><br>
 Creating or editing a pizza                                                                                                                    <br>
-<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence2.PNG">
+<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence2.PNG"><br>
 The search for order screen                                                                                                                    <br>
-<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence3.PNG">
+<img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence3.PNG"><br>
 When orders exist they are populated here                                                                                                          <br>
 <img width="150px" src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/(CRUD)y%20Pizza%20order%20App%20(Andriod-Java)/Images/Evidence4.PNG">
