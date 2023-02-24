@@ -11,7 +11,7 @@ Theme management page: This allows users with the ThemeManager role to CRUD (cre
 
 
 User role implementation: Not allowing a user who doesn't have the right roles to access certain pages, giving them a pop-up telling them why. 
-<img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example4.PNG" > \n
+<img src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Quack%20Social%20Media%20feed(Laravel%20PHP)/Images/Example4.PNG" >
 
 
 The database entity-relationship diagram (ERD). 
