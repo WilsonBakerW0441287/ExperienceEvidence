@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Assignment3CrudyPizza</string>
+    <string name="title_activity_view_order">ViewOrderActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_create_order">CreateOrderActivity</string>
+    <string name="title_activity_edit_order">EditOrderActivity</string>
+    <string name="title_activity_search_order">SearchOrderActivity</string>
+    <string name="title_activity_delete_order">DeleteOrderActivity</string>
+    <string name="title_activity_view_orders">ViewOrdersActivity</string>
+    <string name="action_settings">Settings</string>
+    <!--    need small, medium, large,
+    pepperoni, pineapple, pork
+    size Selection, topping selection, customer information
+    "info", create, edit, search, delete, view orders
+    -->
+    <string name="sizeSelection">Size Selection</string>
+    <string name="toppingSelection">Topping Selection (max 3)</string>
+    <string name="customerInformation">Customer Information</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="pork">Pork</string>
+    <string name="info">Info</string>
+    <string name="create">Create</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="delete">Delete</string>
+    <string name="viewOrders">View Orders</string>
+    <string name="orderNumber">Order Number</string>
+    <!--    we also need everything in French-->
+    <string name="sizeSelectionFR">Sélection de taille</string>
+    <string name="toppingSelectionFR">Sélection de garniture (max 3)</string>
+    <string name="customerInformationFR">Information sur le client</string>
+    <string name="smallFR">Petit</string>
+    <string name="mediumFR">Moyen</string>
+    <string name="largeFR">Grand</string>
+    <string name="pepperoniFR">Pepperoni</string>
+    <string name="pineappleFR">Ananas</string>
+    <string name="porkFR">Porc</string>
+    <string name="infoFR">Info</string>
+    <string name="createFR">Créer</string>
+    <string name="editFR">Éditer</string>
+    <string name="searchFR">Chercher</string>
+    <string name="deleteFR">Effacer</string>
+    <string name="viewOrdersFR">Voir les commandes</string>
+    <string name="orderNumberFR">Numéro de commande</string>
+</resources>

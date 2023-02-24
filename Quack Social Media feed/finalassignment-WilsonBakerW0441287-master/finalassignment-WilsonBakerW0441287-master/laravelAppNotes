@@ -1,0 +1,75 @@
+php laravel new NAME
+organize files
+in this case we added .env to the git repo, by default it is not added
+
+remove parent folder to make generated folders in root of project
+
+php artisan make:model NAME -cmr (controller, migration, resource mgmr)
+
+edit migration script to generate DB
+
+php artisan migrate (:fresh - refreshed database and information is formatted)()
+
+this runs the migrate script and creates the database
+
+php artisan make:seeder NAME
+the seeder allows us to add data to the database
+
+php artisan db:seed (runs the seeder)
+php artisan migrate:fresh --seed (refreshes the database and runs the seeder)
+
+when you make a seeder make sure you add it to the DatabaseSeeder.php file so it can see the file and run it
+
+for a "pivot" table you dont make a model, you just make a migration and add the foreign keys
+php artisan make:migration NAME
+using that migration we make the table and add the foreign keys
+
+now that the database is all set up we can configure the models
+As of right now Laravel doesnt even know about the data!
+
+https://laravel.com/docs/9.x/eloquent-relationships#main-content -docs for relationships
+
+php artisan tinker (allows us to interact with the database)
+TABLENAME::all() (shows all the data in the table)
+TABLENAME::find(ID) (shows the data in the table with the ID)
+TABLENAME::where('column', 'value')->get() (shows the data in the table with the column and value)
+
+edit the models to have functions that allow laravel to see the relationships in the database
+Country.php line 13
+Person.php line 13
+are 2 functions that allow a child/parent relationship
+
+using those functions it allows us to call them and find the associated data
+Person::find(1)->country (finds the country associated with the person with the ID of 1)
+
+we can also utilize the many to many relationship idea
+Language.php line 13
+Person.php line 19
+
+now we can add a resource route controller
+Route::resource('countries', CountriesController::class);
+this gives us all the paths we need!
+
+from the web.php file we can see the routes that are generated and we can follow where they go
+go to the controller and see the functions that are generated
+make a folder with the name of the controller
+start generating the functions in the controller to retrieve views and data
+which means we need to generate the views
+now we bounce between the controller and views to get the data we need displaying how we want
+when making forms make sure to add @csrf
+once you get down to the store function you can add the data to the database
+protected $fillable = [COLUMNAME, COLUMNAME];
+^add this to the controller
+This allows us to only take in certain information from the incomming form
+
+
+STEPS TO ADD LOGIN
+apply bootstrap as the main css framework
+composer require laravel/ui
+^this is the same as npm install
+php artisan ui bootstrap --auth
+^this builds the scaffolding for the login
+npm install
+^this installs the dependencies
+npm run build
+^this builds the css and js files

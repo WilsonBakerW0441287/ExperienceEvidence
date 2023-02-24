@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/City.h
+iostream
+-
+GameSpecs.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/GameSpecs.h
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/GameSpecs.h
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Human.h
+Organism.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Organism.h
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Organism.h
+vector
+-
+iostream
+-
+City.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/City.h
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Zombie.cpp
+Zombie.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Zombie.h
+Human.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Human.h
+Organism.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Organism.h
+
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Zombie.h
+Organism.h
+E:/IT Programming 2nd year/PROG2100 - C++/Assignment3Zombiod/Organism.h
+

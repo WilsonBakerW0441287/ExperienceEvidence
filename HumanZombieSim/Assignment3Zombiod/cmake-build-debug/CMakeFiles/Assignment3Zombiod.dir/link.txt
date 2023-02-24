@@ -1,0 +1,3 @@
+C:\Users\wlhba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Assignment3Zombiod.dir/objects.a
+C:\Users\wlhba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\ar.exe qc CMakeFiles\Assignment3Zombiod.dir/objects.a @CMakeFiles\Assignment3Zombiod.dir\objects1.rsp
+C:\Users\wlhba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Assignment3Zombiod.dir/objects.a -Wl,--no-whole-archive -o Assignment3Zombiod.exe -Wl,--out-implib,libAssignment3Zombiod.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Assignment3Zombiod.dir\linklibs.rsp

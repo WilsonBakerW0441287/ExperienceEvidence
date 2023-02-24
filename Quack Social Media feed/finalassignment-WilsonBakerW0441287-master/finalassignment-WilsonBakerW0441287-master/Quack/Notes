@@ -1,0 +1,10 @@
+STEPS TO ADD LOGIN
+apply bootstrap as the main css framework
+composer require laravel/ui
+^this is the same as npm install
+php artisan ui bootstrap --auth
+^this builds the scaffolding for the login
+npm install
+^this installs the dependencies
+npm run build
+^this builds the css and js files
