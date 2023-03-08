@@ -27,4 +27,4 @@ Leaflet supports and works well with the [GeoJSON](http://geojson.org/) data for
 After fifteen (15) seconds, re-fetch the updated API data and re-perform the GeoJSON transformation as necessary.
 
 
-<img width=200px src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Transit%20Tracker(JS)/Example.png"/>
+<img width=350px src="https://github.com/WilsonBakerW0441287/ExperienceEvidence/blob/main/Transit%20Tracker(JS)/Example.png"/>
